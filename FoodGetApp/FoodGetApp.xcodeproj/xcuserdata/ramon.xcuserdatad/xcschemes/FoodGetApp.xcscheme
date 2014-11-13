@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F64C940C1A14E7C900A7E9FD"
+               BlueprintIdentifier = "F64C94461A14F41300A7E9FD"
                BuildableName = "FoodGetApp.app"
                BlueprintName = "FoodGetApp"
                ReferencedContainer = "container:FoodGetApp.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F64C94251A14E7C900A7E9FD"
+               BlueprintIdentifier = "F64C945F1A14F41300A7E9FD"
                BuildableName = "FoodGetAppTests.xctest"
                BlueprintName = "FoodGetAppTests"
                ReferencedContainer = "container:FoodGetApp.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F64C94251A14E7C900A7E9FD"
+               BlueprintIdentifier = "F64C945F1A14F41300A7E9FD"
                BuildableName = "FoodGetAppTests.xctest"
                BlueprintName = "FoodGetAppTests"
                ReferencedContainer = "container:FoodGetApp.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F64C940C1A14E7C900A7E9FD"
+            BlueprintIdentifier = "F64C94461A14F41300A7E9FD"
             BuildableName = "FoodGetApp.app"
             BlueprintName = "FoodGetApp"
             ReferencedContainer = "container:FoodGetApp.xcodeproj">
@@ -75,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F64C940C1A14E7C900A7E9FD"
+            BlueprintIdentifier = "F64C94461A14F41300A7E9FD"
             BuildableName = "FoodGetApp.app"
             BlueprintName = "FoodGetApp"
             ReferencedContainer = "container:FoodGetApp.xcodeproj">
@@ -93,7 +93,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F64C940C1A14E7C900A7E9FD"
+            BlueprintIdentifier = "F64C94461A14F41300A7E9FD"
             BuildableName = "FoodGetApp.app"
             BlueprintName = "FoodGetApp"
             ReferencedContainer = "container:FoodGetApp.xcodeproj">
