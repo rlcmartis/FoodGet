@@ -14,6 +14,10 @@
 		F64C941E1A14E7C900A7E9FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64C941D1A14E7C900A7E9FD /* Images.xcassets */; };
 		F64C94211A14E7C900A7E9FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F64C941F1A14E7C900A7E9FD /* LaunchScreen.xib */; };
 		F64C942D1A14E7C900A7E9FD /* FoodGetAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F64C942C1A14E7C900A7E9FD /* FoodGetAppTests.m */; };
+		F64C943A1A14E8CD00A7E9FD /* album-art-image.png in Resources */ = {isa = PBXBuildFile; fileRef = F64C94361A14E8CD00A7E9FD /* album-art-image.png */; };
+		F64C943B1A14E8CD00A7E9FD /* album-art-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F64C94371A14E8CD00A7E9FD /* album-art-image@2x.png */; };
+		F64C943C1A14E8CD00A7E9FD /* background-image.png in Resources */ = {isa = PBXBuildFile; fileRef = F64C94381A14E8CD00A7E9FD /* background-image.png */; };
+		F64C943D1A14E8CD00A7E9FD /* background-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F64C94391A14E8CD00A7E9FD /* background-image@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		F64C94261A14E7C900A7E9FD /* FoodGetAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodGetAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64C942B1A14E7C900A7E9FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F64C942C1A14E7C900A7E9FD /* FoodGetAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodGetAppTests.m; sourceTree = "<group>"; };
+		F64C94361A14E8CD00A7E9FD /* album-art-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "album-art-image.png"; path = "../../album-art-image.png"; sourceTree = "<group>"; };
+		F64C94371A14E8CD00A7E9FD /* album-art-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "album-art-image@2x.png"; path = "../../album-art-image@2x.png"; sourceTree = "<group>"; };
+		F64C94381A14E8CD00A7E9FD /* background-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-image.png"; path = "../../background-image.png"; sourceTree = "<group>"; };
+		F64C94391A14E8CD00A7E9FD /* background-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-image@2x.png"; path = "../../background-image@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,10 @@
 		F64C94101A14E7C900A7E9FD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F64C94361A14E8CD00A7E9FD /* album-art-image.png */,
+				F64C94371A14E8CD00A7E9FD /* album-art-image@2x.png */,
+				F64C94381A14E8CD00A7E9FD /* background-image.png */,
+				F64C94391A14E8CD00A7E9FD /* background-image@2x.png */,
 				F64C94111A14E7C900A7E9FD /* Info.plist */,
 				F64C94121A14E7C900A7E9FD /* main.m */,
 			);
@@ -202,6 +214,10 @@
 				F64C941C1A14E7C900A7E9FD /* Main.storyboard in Resources */,
 				F64C94211A14E7C900A7E9FD /* LaunchScreen.xib in Resources */,
 				F64C941E1A14E7C900A7E9FD /* Images.xcassets in Resources */,
+				F64C943C1A14E8CD00A7E9FD /* background-image.png in Resources */,
+				F64C943D1A14E8CD00A7E9FD /* background-image@2x.png in Resources */,
+				F64C943A1A14E8CD00A7E9FD /* album-art-image.png in Resources */,
+				F64C943B1A14E8CD00A7E9FD /* album-art-image@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
