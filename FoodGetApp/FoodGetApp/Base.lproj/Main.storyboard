@@ -34,7 +34,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kBL-lH-Bb3" kind="show" id="nPY-Dy-U1M"/>
+                                    <segue destination="kBL-lH-Bb3" kind="show" id="tKJ-il-uRx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APi114101311410759">
@@ -82,6 +82,7 @@
         <!--View Controller-->
         <scene sceneID="zYW-3O-t2d">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vZi-CV-J9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="kBL-lH-Bb3" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="chb-yQ-Ub7"/>
@@ -99,6 +100,9 @@
                                 <state key="normal" image="back-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="AeeP" kind="show" id="1gf-Zf-5ta"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="lvf-hc-TJp">
                                 <rect key="frame" x="136" y="29" width="49.5" height="30"/>
@@ -112,44 +116,45 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map-image.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wux-5j-Pji">
-                                <rect key="frame" x="0.0" y="71" width="320" height="338"/>
-                            </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4xq-rp-pjP">
-                                <rect key="frame" x="0.0" y="410" width="320" height="158"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RNt-mu-a43">
+                                <rect key="frame" x="0.0" y="409" width="320" height="159"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="btB-Fu-1bh">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="46" id="jWN-81-FRf">
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="btB-Fu-1bh" id="z9y-On-KHv">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jWN-81-FRf" id="Mpy-vW-V0Q">
                                             <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="lQQ-le-9oG" kind="show" id="OWj-HN-keT"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qor-34-Vpw">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qor-34-Vpw" id="n2n-a6-jvT">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ciM-nt-ahc">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ciM-nt-ahc" id="3Zw-ro-R5q">
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeJ-hm-FZH">
+                                                    <rect key="frame" x="14" y="12" width="84" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="distance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXD-rs-lqH">
+                                                    <rect key="frame" x="246" y="12" width="66" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.48352667297979801" green="0.48352667297979801" blue="0.48352667297979801" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map-image.png" translatesAutoresizingMaskIntoConstraints="NO" id="3qo-YN-qsY">
+                                <rect key="frame" x="0.0" y="71" width="320" height="338"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="lQQ-le-9oG" kind="show" identifier="map" id="HPd-9k-Dkz"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vZi-CV-J9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="746" y="160"/>
+            <point key="canvasLocation" x="744" y="160"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pzi-Bm-b5F">
@@ -163,6 +168,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cup-bg-image.png" translatesAutoresizingMaskIntoConstraints="NO" id="HSy-9E-LeX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="superior-bar-image.png" translatesAutoresizingMaskIntoConstraints="NO" id="EaY-cZ-mIq">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
                             </imageView>
@@ -171,6 +179,9 @@
                                 <state key="normal" image="back-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="kBL-lH-Bb3" kind="show" id="Ss2-b3-6Dd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="5a1-ff-PiL">
                                 <rect key="frame" x="102" y="29" width="117.5" height="30"/>
@@ -189,7 +200,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Le Restaurant" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdP-k7-a8H">
                                 <rect key="frame" x="107" y="250" width="107" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -197,7 +208,6 @@
                                 <rect key="frame" x="25" y="306" width="270" height="166"/>
                                 <string key="text">Information about the restaurant and the menus available that day. Information about the restaurant and the menus available that. Information about the restaurant and the menus available. Information about the restaurant and the menus. Information about the restaurant and the. Information about the restaurant and.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hr1-Nv-oWf">
@@ -206,9 +216,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cup-bg-image.png" translatesAutoresizingMaskIntoConstraints="NO" id="HSy-9E-LeX">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -216,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BB7-j1-bDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1142" y="160"/>
+            <point key="canvasLocation" x="1134" y="160"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fo2-ZB-bdr">
@@ -242,12 +249,18 @@
                                     <segue destination="AeeP" kind="show" id="wHr-FL-9ys"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="input-1-button.png" translatesAutoresizingMaskIntoConstraints="NO" id="c0e-ty-vJ3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="sdg" textAlignment="center" minimumFontSize="17" background="input-1-button.png" translatesAutoresizingMaskIntoConstraints="NO" id="c0e-ty-vJ3">
                                 <rect key="frame" x="16" y="368" width="288" height="4"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sloggan-image.png" translatesAutoresizingMaskIntoConstraints="NO" id="czg-wK-PBD">
+                                <rect key="frame" x="73" y="184" width="174" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foodget-image.png" translatesAutoresizingMaskIntoConstraints="NO" id="aTn-ZH-6uz">
+                                <rect key="frame" x="26" y="119" width="269" height="57"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -263,6 +276,7 @@
         <image name="cup-bg-image.png" width="319" height="569"/>
         <image name="cups-bg-image.png" width="320" height="569"/>
         <image name="directions-button.png" width="97" height="36"/>
+        <image name="foodget-image.png" width="291" height="65"/>
         <image name="inferior-bar-image.png" width="320" height="53"/>
         <image name="input-1-button.png" width="302" height="5"/>
         <image name="input-2-button.png" width="159" height="5"/>
@@ -271,7 +285,12 @@
         <image name="notback-button.png" width="43" height="35"/>
         <image name="search-button.png" width="97" height="37"/>
         <image name="signup-button.png" width="97" height="36"/>
+        <image name="sloggan-image.png" width="181" height="37"/>
         <image name="superior-bar-image.png" width="320" height="71"/>
         <image name="user-image.png" width="125" height="123"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ss2-b3-6Dd"/>
+        <segue reference="1gf-Zf-5ta"/>
+    </inferredMetricsTieBreakers>
 </document>
